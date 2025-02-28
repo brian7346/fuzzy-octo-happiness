@@ -1,9 +1,27 @@
-export interface User {
-    name: string;
-    age: number;
-}
+/**
+ * Задача 1: Типы данных
+ * 
+ * Проблема: Необходимо типизировать переменные согласно их назначению.
+ * Обратите внимание на значения переменных и подберите для них правильные типы.
+ */
 
-export const user: User = {
-    name: "John",
-    age: "30"
-} 
+// TODO: Добавьте правильные типы для переменных
+let age;        // должен быть number
+let name;       // должен быть string
+let isStudent;  // должен быть boolean
+let hobbies;    // должен быть массив строк
+let role;       // должен быть объект с полями id (number) и name (string)
+
+// Проверка типов
+const example = {
+    age: 25,
+    name: "Иван",
+    isStudent: true,
+    hobbies: ["спорт", "музыка"],
+    role: {
+        id: 1,
+        name: "admin"
+    }
+};
+
+// Типы должны совпадать с типами объекта example 
